@@ -194,8 +194,8 @@
   text-align: center;
   color: rgba(37, 43, 66, 1);
 }
-.pContainer{
-    gap: 10px;
+.pContainer {
+  gap: 10px;
 }
 
 .post {
@@ -213,13 +213,13 @@
 .pIText {
   z-index: 10;
   top: 20px;
-  left: 30px;
+  left: 20px;
   position: absolute;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   padding: 0 10px;
-  width: 40px;
+  width: 37px;
   text-align: center;
   background-color: rgba(231, 64, 64, 1);
   border-radius: 5px;
@@ -252,6 +252,7 @@
   color: rgba(115, 115, 115, 1);
 }
 
+
 .pDDate {
   font-weight: 400;
   font-size: 12px;
@@ -277,4 +278,78 @@
 
 .postIcon {
   font-size: 14px;
+}
+
+.aboutSection {
+  margin: 80px 0;
+  padding: 48px 41.5px 13.7px 41.5px;
+  padding-top: 48px;
+  gap: 126px;
+  justify-content: space-between;
+}
+
+.aboutSection article {
+  gap: 28px;
+  width: 446px;
+}
+
+.aboutSection article h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.aboutSection article h6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.aboutSection .aboutP {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.aboutDetail {
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.abtUserImg {
+  height: 90px;
+  width: 90px;
+}
+
+.stars {
+  gap: 6.83px;
+  font-size: 18.35px;
+  color: rgba(243, 205, 3, 1);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ctaSection {
+  padding: 160px 0;
+  background-image: url("/public/images/landingpage/unsplash_XEmaJaM-4nE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ctaSection section {
+  gap: 30px;
+  width: 571px;
+}
+
+.ctaSection p {
+  padding: 0 30px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.ctaPrice {
+  color: rgba(35, 133, 109, 1);
 }

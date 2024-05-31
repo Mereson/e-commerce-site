@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom"
 import Button from "../Button"
+import ProductCard from "./ProductCard"
 
 const BestSeller = () => {
+  const navigate = useNavigate()
+
+  const navigateTo = () => {
+    navigate("product")
+  }
   return (
     <section className="flex itemsCenter justifyCenter">
       <section className="bestSeller flex column itemsCenter justifyCenter">
@@ -10,41 +17,22 @@ const BestSeller = () => {
           <p>Problems trying to resolve the conflict between </p>
         </div>
         <section className="bsProducts">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} />
         </section>
         <section className="flex itemsCenter justifyCenter">
           <Button text={"LOAD MORE PRODUCTS"} style="commonButton actionBlue" />
         </section>
       </section>
     </section>
-  )
-}
-
-const ProductCard = () => {
-  return (
-    <div className="flex column">
-      <img
-        src="/public/images/landingpage/product-cover-5.png"
-        alt="product cover"
-      />
-      <div className="productDetail flex column justifyCenter ">
-        <h5>Graphic Design</h5>
-        <p>English Department</p>
-        <span className="flex itemsCenter justifyCenter">
-          <h5 className="priceGray">$16.48</h5>
-          <h5 className="priceGreen">$6.48</h5>
-        </span>
-      </div>
-    </div>
   )
 }
 

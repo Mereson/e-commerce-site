@@ -1,3 +1,21 @@
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -16,12 +34,6 @@
   font-weight: 700;
 }
 
-.navSection h3 {
-  font-weight: 700;
-  font-size: 24px;
-  color: rgba(37, 43, 66, 1);
-}
-
 .navItem {
   display: flex;
   justify-content: center;
@@ -33,16 +45,36 @@
   color: #fff;
 }
 
+.textGrey {
+  color: rgba(115, 115, 115, 1);
+}
+
 .actionBlue {
   color: rgba(35, 166, 240, 1);
+}
+
+.bgActionBlue {
+  background-color: rgba(35, 166, 240, 1);
 }
 
 .actionGreen {
   color: rgba(45, 192, 113, 1);
 }
 
+.bgActionGreen {
+  background-color: rgba(45, 192, 113, 1);
+}
+
 .logoBlue {
   color: rgba(37, 43, 66, 1);
+}
+
+.bgLogoBlue {
+  background-color: rgba(37, 43, 66, 1);
+}
+
+.bgBrown {
+  background-color: rgba(231, 124, 64, 1);
 }
 
 .navItemFlex {
@@ -56,11 +88,6 @@
 
 .navItemFlex2 {
   gap: 12px;
-}
-.hdn6 {
-  font-size: 14px;
-  font-weight: 700;
-  font-family: sans-serif;
 }
 
 .navSection2 {
@@ -124,11 +151,6 @@ footer {
   background-color: rgba(250, 250, 250, 1);
 }
 
-.footerSection h3 {
-  font-weight: 700;
-  color: rgba(37, 43, 66, 1);
-}
-
 .footerIcons {
   font-size: 22px;
   gap: 20.5px;
@@ -150,8 +172,16 @@ footer {
   align-items: center;
 }
 
+.textCenter {
+  text-align: center;
+}
+
 .column {
   flex-direction: column;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .footerArticle {
