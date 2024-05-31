@@ -1,3 +1,4 @@
+import Collaborations from "../components/product/Collaborations"
 import Info from "../components/product/Info"
 import Nav from "../components/product/Nav"
 import ProductList from "../components/product/ProductList"
@@ -9,7 +10,8 @@ const Product = () => {
       <Nav />
       <SingleProduct />
       <Info />
-      <ProductList />
+      <ProductList text={"BESTSELLER PRODUCTS"} />
+      <Collaborations />
     </>
   )
 }

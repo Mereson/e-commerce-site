@@ -1,12 +1,14 @@
 import { BsCart, BsEnvelope, BsSearch, BsTelephone } from "react-icons/bs"
 import "./styles/style.css"
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { IoMdHeartEmpty } from "react-icons/io"
 import { FaRegUser } from "react-icons/fa6"
 
 const Navbar = () => {
+  const navigate = useNavigate()
+
   return (
     <nav className="navbar">
       <section className="navSection navBg1">
@@ -50,7 +52,7 @@ const Navbar = () => {
             <FaRegUser className="icon" /> Login / Register
           </span>
           <BsSearch className="icon" />
-          <span className="iconHolder">
+          <span onClick={() => navigate("/cart")} className="iconHolder">
             <BsCart className="icon" />1
           </span>
           <span className="iconHolder">

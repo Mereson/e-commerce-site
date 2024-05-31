@@ -11,6 +11,7 @@ const Footer = () => {
           <FaTwitter />
         </div>
       </section>
+      <div className="line"></div>
       <article className="flex footerArticle">
         <article className="flex itemCenter grid ">
           <div className="flex">

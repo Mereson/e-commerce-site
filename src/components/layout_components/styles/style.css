@@ -144,11 +144,17 @@ footer {
   flex-direction: column;
 }
 
+footer .line {
+  height: 1px;
+  margin: 0 120px;
+  background-color: rgba(230, 230, 230, 1);
+}
+
 .footerSection {
   height: 142px;
   padding: 0 120px;
   justify-content: space-between;
-  background-color: rgba(250, 250, 250, 1);
+  /* background-color: rgba(250, 250, 250, 1); */
 }
 
 .footerIcons {
@@ -182,6 +188,10 @@ footer {
 
 .pointer {
   cursor: pointer;
+}
+
+.wFull {
+  width: 100%;
 }
 
 .footerArticle {
