@@ -29,9 +29,24 @@
   align-items: center;
 }
 
+.white {
+  color: #fff;
+}
+
+.actionBlue {
+  color: rgba(35, 166, 240, 1);
+}
+
+.actionGreen {
+  color: rgba(45, 192, 113, 1);
+}
+
+.logoBlue {
+  color: rgba(37, 43, 66, 1);
+}
+
 .navItemFlex {
   display: flex;
-  color: #fff;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
@@ -74,7 +89,6 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  color: rgba(35, 166, 240, 1);
 }
 
 .userSectItem {
@@ -98,20 +112,130 @@
   cursor: pointer;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
+footer {
+  display: flex;
+  flex-direction: column;
 }
 
-.footerSection{
-    height: 142px;
-    display: flex;
-    align-items: center;
-    padding: 0 100px;
-    background-color: rgba(250, 250, 250, 1);
+.footerSection {
+  height: 142px;
+  padding: 0 120px;
+  justify-content: space-between;
+  background-color: rgba(250, 250, 250, 1);
 }
 
-.footerSection h3{
-    color: rgba(37, 43, 66, 1);
-    font-weight: 700;
+.footerSection h3 {
+  font-weight: 700;
+  color: rgba(37, 43, 66, 1);
+}
+
+.footerIcons {
+  font-size: 22px;
+  gap: 20.5px;
+}
+
+.border {
+  border: solid;
+}
+
+.flex {
+  display: flex;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.itemCenter {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.footerArticle {
+  padding: 50px 120px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grid {
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.grid div {
+  gap: 10px;
+  flex-direction: column;
+  width: 148px;
+}
+
+.grid h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.grid p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(115, 115, 115, 1);
+}
+
+.grid p:hover {
+  color: rgb(182, 176, 176);
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.formItem {
+  padding-left: 30px;
+}
+
+.formItem h5 {
+  color: rgba(37, 43, 66, 1);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 180px;
+  padding: 20px 20px;
+  background-color: (249, 249, 249, 1);
+  border: 1px solid rgba(230, 230, 230, 1);
+}
+
+form input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+form button {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px rgba(35, 166, 240, 1);
+  border-radius: 0 5px 5px 0;
+  padding: 15px 22.5px;
+  outline: none;
+  background-color: rgba(35, 166, 240, 1);
+}
+
+.formItem p {
+  color: rgba(115, 115, 115, 1);
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.footerSection2 {
+  padding: 25px 120px;
+  color: rgba(115, 115, 115, 1);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
 }

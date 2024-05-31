@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="navItem">
           <h6 className="hdn6">Follow Us and get a chance to win 80% off</h6>
         </div>
-        <div className="navItemFlex navItemFlex2">
+        <div className="navItemFlex white navItemFlex2">
           <h6 className="hdn6">Follow Us :</h6>
           <FaInstagram />
           <FaYoutube />
@@ -43,7 +43,7 @@ const Navbar = () => {
             <NavLink className="links">Pages</NavLink>
           </div>
         </div>
-        <div className="userSection">
+        <div className="userSection actionBlue">
           <span className="userSectItem">
             <FaRegUser className="icon" /> Login / Register
           </span>

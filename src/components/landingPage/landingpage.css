@@ -1,0 +1,280 @@
+.heroSection {
+  padding: 84px 0;
+}
+
+.heroCards {
+  display: flex;
+  gap: 15px;
+}
+
+.heroCard {
+  padding: 24px 0 0 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroCard1 {
+  height: 590px;
+  width: 429px;
+}
+
+.heroCard2 {
+  width: 656px;
+  height: 277px;
+}
+
+.heroCard3 {
+  height: 300px;
+  width: 310px;
+}
+
+.card2 {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card3 {
+  gap: 15px;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.heroCardText h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.text1 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(45, 192, 113, 1);
+}
+
+.text2 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(37, 43, 66, 1);
+}
+
+.bestSeller {
+  padding: 80px 0;
+  gap: 24px;
+}
+
+.bestSeller .text {
+  text-align: center;
+  gap: 10px;
+}
+
+.bestSeller .text h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.bestSeller .text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.bestSeller .text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.bsProducts {
+  padding: 32px 24px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.productDetail {
+  width: 176px;
+  height: 162px;
+  gap: 10px;
+  text-align: center;
+}
+
+.productDetail h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.productDetail p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.productDetail span {
+  gap: 5px;
+}
+
+.productDetail span .priceGray {
+  color: rgba(189, 189, 189, 1);
+}
+
+.productDetail span .priceGreen {
+  color: rgba(35, 133, 109, 1);
+}
+
+.commonButton {
+  padding: 15px 40px;
+  border: 1px solid rgba(35, 166, 240, 1);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.services {
+  margin-top: 80px;
+  gap: 30px;
+  text-align: center;
+}
+
+.services div {
+  gap: 20px;
+  width: 230px;
+  padding: 35px 40px;
+}
+
+.services div h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.services div p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.servicesIcon {
+  font-size: 72px;
+}
+
+.posts {
+  padding: 112px 0;
+}
+
+.postTitle p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.postTitle h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(37, 43, 66, 1);
+}
+.pContainer{
+    gap: 10px;
+}
+
+.post {
+  margin-top: 80px;
+}
+
+.postImageContainer {
+  position: relative;
+}
+
+.postImage {
+  position: relative;
+}
+
+.pIText {
+  z-index: 10;
+  top: 20px;
+  left: 30px;
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 10px;
+  width: 40px;
+  text-align: center;
+  background-color: rgba(231, 64, 64, 1);
+  border-radius: 5px;
+}
+
+.postDetails {
+  padding: 25px;
+  width: 300px;
+  gap: 10px;
+}
+
+.postLinks {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(115, 115, 115, 1);
+  gap: 15px;
+}
+
+.postDetails h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.pDInfo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.pDDate {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 16px;
+  color: rgba(115, 115, 115, 1);
+  justify-content: space-between;
+}
+
+.pDDate p {
+  gap: 2px;
+}
+.postDetails div {
+  margin-top: 10px;
+  gap: 2px;
+}
+
+.postDetails h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.postIcon {
+  font-size: 14px;
+}

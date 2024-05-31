@@ -1,9 +1,16 @@
+import BestSeller from "../components/landingPage/BestSeller"
+import Hero from "../components/landingPage/Hero"
+import Posts from "../components/landingPage/Posts"
+import Services from "../components/landingPage/Services"
 
 const LandingPage = () => {
   return (
-    <section>
-      
-    </section>
+    <>
+      <Hero />
+      <BestSeller />
+      <Services />
+      <Posts />
+    </>
   )
 }
 
