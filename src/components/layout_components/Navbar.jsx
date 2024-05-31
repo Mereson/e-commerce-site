@@ -12,17 +12,17 @@ const Navbar = () => {
       <section className="navSection navBg1">
         <div className="navItem">
           <span className="navItemFlex">
-            <BsTelephone /> <h6 className="hdn6">(225) 555-0118</h6>
+            <BsTelephone /> <h6>(225) 555-0118</h6>
           </span>
           <span className="navItemFlex hdn6">
             <BsEnvelope /> michelle.rivera@example.com
           </span>
         </div>
         <div className="navItem">
-          <h6 className="hdn6">Follow Us and get a chance to win 80% off</h6>
+          <h6>Follow Us and get a chance to win 80% off</h6>
         </div>
         <div className="navItemFlex white navItemFlex2">
-          <h6 className="hdn6">Follow Us :</h6>
+          <h6>Follow Us :</h6>
           <FaInstagram />
           <FaYoutube />
           <FaFacebook />
@@ -31,9 +31,11 @@ const Navbar = () => {
       </section>
       <section className="navSection navSection2">
         <div className="navItem nav2">
-          <h3>Bandage</h3>
+          <h3 className="logoBlue">Bandage</h3>
           <div className="linkDiv">
-            <NavLink className="links">Hello</NavLink>
+            <NavLink to={"/"} className="links">
+              Hello
+            </NavLink>
             <NavLink className="links">
               Shop <RiArrowDropDownLine />
             </NavLink>

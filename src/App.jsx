@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import LandingPage from "./pages/LandingPage"
 import MainLayout from "./layouts/MainLayout"
+import Product from "./pages/Product"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<LandingPage />} />
+          <Route path="product" element={<Product />} />
         </Route>
       </Routes>
     </BrowserRouter>

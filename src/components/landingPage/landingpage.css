@@ -213,13 +213,13 @@
 .pIText {
   z-index: 10;
   top: 20px;
-  left: 30px;
+  left: 20px;
   position: absolute;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   padding: 0 10px;
-  width: 40px;
+  width: 37px;
   text-align: center;
   background-color: rgba(231, 64, 64, 1);
   border-radius: 5px;
@@ -251,6 +251,7 @@
   line-height: 20px;
   color: rgba(115, 115, 115, 1);
 }
+
 
 .pDDate {
   font-weight: 400;
@@ -332,3 +333,23 @@
   gap: 18px;
 }
 
+.ctaSection {
+  padding: 160px 0;
+  background-image: url("/public/images/landingpage/unsplash_XEmaJaM-4nE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ctaSection section {
+  gap: 30px;
+  width: 571px;
+}
+
+.ctaSection p {
+  padding: 0 30px;
+  color: rgba(115, 115, 115, 1);
+}
+
+.ctaPrice {
+  color: rgba(35, 133, 109, 1);
+}
