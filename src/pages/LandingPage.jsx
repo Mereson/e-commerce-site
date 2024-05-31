@@ -1,3 +1,4 @@
+import About from "../components/landingPage/About"
 import BestSeller from "../components/landingPage/BestSeller"
 import Hero from "../components/landingPage/Hero"
 import Posts from "../components/landingPage/Posts"
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <BestSeller />
       <Services />
       <Posts />
+      <About/>
     </>
   )
 }

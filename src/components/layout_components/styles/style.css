@@ -33,6 +33,10 @@
   color: #fff;
 }
 
+.textGrey {
+  color: rgba(115, 115, 115, 1);
+}
+
 .actionBlue {
   color: rgba(35, 166, 240, 1);
 }
@@ -148,6 +152,10 @@ footer {
 
 .itemCenter {
   align-items: center;
+}
+
+.textCenter {
+  text-align: center;
 }
 
 .column {

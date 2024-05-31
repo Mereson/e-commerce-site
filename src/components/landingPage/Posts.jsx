@@ -1,9 +1,5 @@
 import { AiOutlineAreaChart } from "react-icons/ai"
-import {
-  MdArrowForward,
-  MdArrowForwardIos,
-  MdKeyboardArrowRight,
-} from "react-icons/md"
+import { MdArrowForwardIos } from "react-icons/md"
 import { TbClockHour3 } from "react-icons/tb"
 
 const Posts = () => {
@@ -15,9 +11,9 @@ const Posts = () => {
           <h2>Featured Posts</h2>
         </div>
         <div className="flex pContainer">
-          <Post src={"/images/landingpage/unsplash_hHdHCfAifHU.png"} />
-          <Post src={"/images/landingpage/unsplash_tVEqStC2uz8.png"} />
-          <Post src={"/images/landingpage/unsplash_dEGu-oCuB1Y.png"} />
+          <Post src={"/images/landingpage/posts (1).png"} />
+          <Post src={"/images/landingpage/posts (2).png"} />
+          <Post src={"/images/landingpage/posts (3).png"} />
         </div>
       </section>
     </section>
