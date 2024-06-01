@@ -4,8 +4,8 @@ import { TbClockHour3 } from "react-icons/tb"
 
 const Posts = () => {
   return (
-    <section className="posts flex justifyCenter itemsCenter">
-      <section>
+    <section className="posts flex bgGrey justifyCenter itemCenter">
+      <section className="flex column justifyCenter itemCenter">
         <div className="postTitle">
           <p className="actionBlue">Practice Advice</p>
           <h2>Featured Posts</h2>
@@ -22,8 +22,8 @@ const Posts = () => {
 
 const Post = ({ src }) => {
   return (
-    <div className="post">
-      <div className="postImageContainer">
+    <div className="post bgWhite">
+      <div className="postImageContainer flex justifyCenter itemCenter">
         <h6 className="pIText white">NEW</h6>
         <img className="postImage" src={src} alt="post image" />
       </div>

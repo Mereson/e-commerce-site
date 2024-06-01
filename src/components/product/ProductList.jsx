@@ -1,23 +1,22 @@
 import ProductCard from "../landingPage/ProductCard"
 
-const ProductList = () => {
+const ProductList = ({ text }) => {
   return (
-    <section className="productList">
-      <section className="flex column">
-        <div className="flex">
-          <h3 className="logoBlue">BESTSELLER PRODUCTS</h3>
+    <section className="productList hide">
+      <section className="flex column justifyCenter ">
+        <div className="flex column ">
+          <h3 className="logoBlue">{text}</h3>
+          <div className="bsLine"></div>
         </div>
-        <section className="bsProducts">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+        <section className="bestSellerItems">
+          <ProductCard styles={"bsItem"} />
+          <ProductCard styles={"bsItem"} />
+          <ProductCard styles={"bsItem"} />
+          <ProductCard styles={"bsItem"} />
+          <ProductCard styles={"bsItem"} />
+          <ProductCard styles={"bsItem"} />
+          <ProductCard styles={"bsItem"} />
+          <ProductCard styles={"bsItem"} />
         </section>
       </section>
     </section>

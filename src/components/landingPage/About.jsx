@@ -33,46 +33,55 @@ const About = () => {
         </article>
         <div className="aboutGrid">
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages1.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages2.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages3.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages4.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages5.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages6.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages7.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages8.png"
             alt="about images"
           />
 
           <img
+            className="aboutGridImage"
             src="/Public/images/landingpage/aboutImages9.png"
             alt="about images"
           />

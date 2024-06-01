@@ -1,5 +1,6 @@
 .productNavbar {
-  height: 92px;
+  height: 82px;
+  /* margin-bottom: 10px; */
   background-color: rgba(250, 250, 250, 1);
 }
 
@@ -12,8 +13,11 @@
   font-size: 14px;
 }
 
+/* SINGLE PRODUCT */
+
 .singleProduct {
   gap: 34px;
+  padding-top: 10px;
   padding-bottom: 52px;
 }
 
@@ -79,8 +83,11 @@
   align-items: center;
 }
 
+/* PRODUCT INFO */
+
 .productInfoSection {
   gap: 17px;
+  padding-bottom: 68px;
 }
 
 .productInfoSection nav {
@@ -89,9 +96,17 @@
   font-weight: 600;
 }
 
+.productInfoSection nav p:hover {
+  color: rgba(170, 170, 170, 0.774);
+}
+
 .productInfo {
   padding: 24px 0 68px 0;
   gap: 30px;
+  padding: 60px 40px;
+  border-radius: 15px;
+  /* background-color: rgba(250, 250, 250, 1); */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .productInfo article {
@@ -110,7 +125,8 @@
 }
 
 .productList {
-  padding: 48px 195px;
+  padding: 48px 135px;
+  background-color: rgb(244, 244, 244);
 }
 
 .productList div {
@@ -118,6 +134,76 @@
   align-items: start;
 }
 
+.bestSellerItems {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  place-items: center;
+  place-content: center;
+}
+
+.bsLine {
+  height: 3px;
+  width: 100%;
+  margin: 30px 20px 20px 20px;
+  background-color: rgba(236, 236, 236, 1);
+}
+
+.bsItem img {
+  width: 239px;
+  height: 280px;
+}
+
+.bsItem div {
+  padding-top: 25px;
+}
+
 .productList h3 {
-    padding: 0 20px;
+  padding: 0 20px;
+}
+
+.collab {
+  padding: 58.03px 0;
+}
+
+.collab section {
+  padding: 0 195px;
+  gap: 86.5px;
+}
+
+@media (max-width: 430px) {
+  .productNavbar {
+    justify-content: center;
+  }
+
+  .productNavbar div {
+    gap: 5px;
+    padding: 0;
+  }
+
+  .singleProduct {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productImage {
+    width: 348px;
+  }
+
+  .productPrice {
+    width: 307px;
+    padding: 30px 40px;
+  }
+
+  .collab {
+    background-color: rgba(250, 250, 250, 1);
+  }
+
+  .collab section {
+    flex-direction: column;
+    padding: 20px 30px;
+  }
 }

@@ -9,24 +9,24 @@ const BestSeller = () => {
     navigate("product")
   }
   return (
-    <section className="flex itemsCenter justifyCenter">
-      <section className="bestSeller flex column itemsCenter justifyCenter">
-        <div className="text flex column itemsCenter justifyCenter">
-          <h4>Featured Products</h4>
+    <section className="flex itemsCenter bgGrey justifyCenter">
+      <section className="bestSeller flex column itemCenter justifyCenter">
+        <div className="text flex column itemCenter justifyCenter">
+          <h4 className="hide">Featured Products</h4>
           <h3>BESTSELLER PRODUCTS</h3>
           <p>Problems trying to resolve the conflict between </p>
         </div>
         <section className="bsProducts">
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
-          <ProductCard navigate={navigateTo} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
+          <ProductCard navigate={navigateTo} styles={"bsProduct"} />
         </section>
         <section className="flex itemsCenter justifyCenter">
           <Button text={"LOAD MORE PRODUCTS"} style="commonButton actionBlue" />

@@ -10,6 +10,7 @@ const SingleProduct = () => {
       <section>
         <div>
           <img
+          className="productImage"
             src="/images/productpage/single-product-1-cover-2.jpg"
             alt="product image"
           />
@@ -25,7 +26,7 @@ const SingleProduct = () => {
           />
         </div>
       </section>
-      <article className="flex column productPrice">
+      <article className="flex column productPrice ">
         <div className="productPriceItem1 flex column">
           <div>
             <h4 className="logoBlue">Floating Phone</h4>
