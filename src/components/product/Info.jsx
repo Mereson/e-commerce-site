@@ -29,7 +29,7 @@ const Info = () => {
             </p>
           </article>
           <img
-            src="/public/images/productpage/unsplash_QANOF9iJlFs.png"
+            src="/images/productpage/unsplash_QANOF9iJlFs.png"
             alt="product info image"
           />
         </section>

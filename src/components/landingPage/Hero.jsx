@@ -6,23 +6,23 @@ const Hero = () => {
       <section className="heroCards">
         <div className="card1">
           <HeroCards
-            src={"/public/images/landingpage/card-cover-5.png"}
+            src={"/images/landingpage/card-cover-5.png"}
             size={"heroCard1"}
           />
         </div>
         <div className="flex card2">
           <HeroCards
-            src={"/public/images/landingpage/card-cover-6.png"}
+            src={"/images/landingpage/card-cover-6.png"}
             size={"heroCard2"}
           />
 
           <div className="flex card3">
             <HeroCards
-              src={"/public/images/landingpage/card-cover-6 (1).png"}
+              src={"/images/landingpage/card-cover-6 (1).png"}
               size={"heroCard3"}
             />
             <HeroCards
-              src={"/public/images/landingpage/card-cover-7.png"}
+              src={"/images/landingpage/card-cover-7.png"}
               size={"heroCard3"}
             />
           </div>

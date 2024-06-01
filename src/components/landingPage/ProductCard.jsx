@@ -3,7 +3,7 @@ const ProductCard = ({ navigate, styles }) => {
     <div onClick={navigate} className={`flex column bgWhite ${styles}`}>
       <img
         className="pointer"
-        src="/public/images/landingpage/product-cover-5.png"
+        src="/images/landingpage/product-cover-5.png"
         alt="product cover"
       />
       <div className="productDetail wFull flex column justifyCenter itemCenter ">

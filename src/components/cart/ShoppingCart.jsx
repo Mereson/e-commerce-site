@@ -6,7 +6,7 @@ import Button from "../Button"
 
 const ShoppingCart = () => {
   return (
-    <section className=" shoppingCart">
+    <section className=" shoppingCart flex justifyCenter itemCenter">
       <section className="flex cartReview">
         <section className="cartItems bgWhite flex column">
           <h2>Shopping Cart</h2>
@@ -117,7 +117,7 @@ const CartItem = () => {
           </p>
         </div>
       </div>
-      <div className="flex column justifyCenter">
+      <div className="flex column hidden  justifyCenter">
         <div className="cartItem flex">
           <div className="column1 flex itemCenter ">
             <img

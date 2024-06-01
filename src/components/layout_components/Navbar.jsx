@@ -34,7 +34,9 @@ const Navbar = () => {
       </section>
       <section className="navSection navSection2">
         <div className="navItem nav2">
-          <h3 onClick={() => navigate("/")} className="logoBlue">Bandage</h3>
+          <h3 onClick={() => navigate("/")} className="logoBlue pointer">
+            Bandage
+          </h3>
           <div className="linkDiv">
             <NavLink to={"/"} className="links">
               Hello
@@ -63,7 +65,9 @@ const Navbar = () => {
       </section>
       <section className="mobileNav">
         <div className="flex itemCenter mobileNavContent logoBlue justifyBetween wFull">
-          <h3 onClick={() => navigate("/")} className="logoBlue">Bandage</h3>
+          <h3 onClick={() => navigate("/")} className="logoBlue">
+            Bandage
+          </h3>
           <div className="flex itemCenter mobileNavIcons ">
             <BsSearch className="mobileNavIcon " />
             <span onClick={() => navigate("/cart")} className="iconHolder">
