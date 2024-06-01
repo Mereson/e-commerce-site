@@ -1,6 +1,6 @@
 const Collaborations = () => {
   return (
-    <section className="collab flex justifyCenter itemCenter">
+    <section className="collab flex justifyCenter itemCenter bgGrey">
       <section className="flex justifyCenter itemCenter">
         <img src="/public/images/productpage/Vector.png" alt="logo" />
         <img src="/public/images/productpage/Vector (1).png" alt="logo" />

@@ -4,8 +4,8 @@ import { VscBook } from "react-icons/vsc"
 
 const Services = () => {
   return (
-    <section className=" flex itemsCenter justifyCenter">
-      <section className="bestSeller">
+    <section className=" flex itemCenter justifyCenter">
+      <section className="bestSeller flex column itemCenter justifyCenter">
         <div className="text flex column itemsCenter justifyCenter">
           <h4>Featured Products</h4>
           <h3>THE BEST SERVICES</h3>

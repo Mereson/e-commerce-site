@@ -3,7 +3,7 @@ import "./product.css"
 
 const Nav = ({ isTrue }) => {
   return (
-    <section className="productNavbar flex itemCenter ">
+    <section className="productNavbar flex itemCenter">
       {!isTrue ? (
         <div className="flex itemCenter">
           <h6 className="logoBlue">Home</h6>

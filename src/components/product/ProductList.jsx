@@ -1,9 +1,9 @@
 import ProductCard from "../landingPage/ProductCard"
 
-const ProductList = ({text}) => {
+const ProductList = ({ text }) => {
   return (
-    <section className="productList">
-      <section className="flex column">
+    <section className="productList hide">
+      <section className="flex column justifyCenter ">
         <div className="flex column ">
           <h3 className="logoBlue">{text}</h3>
           <div className="bsLine"></div>

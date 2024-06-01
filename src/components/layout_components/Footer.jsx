@@ -4,16 +4,16 @@ const Footer = () => {
   return (
     <footer>
       <section className="footerSection flex itemCenter">
-        <h3 className="logoBlue">Bandage</h3>
+        <h3 className="logoBlue ">Bandage</h3>
         <div className="navItemFlex footerIcons flex actionBlue navItemFlex2">
           <FaFacebook />
           <FaInstagram />
           <FaTwitter />
         </div>
       </section>
-      <div className="line"></div>
+      <div className="line hide"></div>
       <article className="flex footerArticle">
-        <article className="flex itemCenter grid ">
+        <article className="flex itemCenter grid">
           <div className="flex">
             <h5>Company Info</h5>
 

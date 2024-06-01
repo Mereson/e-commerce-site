@@ -5,13 +5,14 @@ import { NavLink, useNavigate } from "react-router-dom"
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { IoMdHeartEmpty } from "react-icons/io"
 import { FaRegUser } from "react-icons/fa6"
+import { BiMenuAltRight } from "react-icons/bi"
 
 const Navbar = () => {
   const navigate = useNavigate()
 
   return (
-    <nav className="navbar">
-      <section className="navSection navBg1">
+    <nav className="flex column">
+      <section className="navSection  navBg1">
         <div className="navItem">
           <span className="navItemFlex">
             <BsTelephone /> <h6>(225) 555-0118</h6>
@@ -33,7 +34,7 @@ const Navbar = () => {
       </section>
       <section className="navSection navSection2">
         <div className="navItem nav2">
-          <h3 className="logoBlue">Bandage</h3>
+          <h3 onClick={() => navigate("/")} className="logoBlue">Bandage</h3>
           <div className="linkDiv">
             <NavLink to={"/"} className="links">
               Hello
@@ -59,6 +60,26 @@ const Navbar = () => {
             <IoMdHeartEmpty className="icon" />1
           </span>
         </div>
+      </section>
+      <section className="mobileNav">
+        <div className="flex itemCenter mobileNavContent logoBlue justifyBetween wFull">
+          <h3 onClick={() => navigate("/")} className="logoBlue">Bandage</h3>
+          <div className="flex itemCenter mobileNavIcons ">
+            <BsSearch className="mobileNavIcon " />
+            <span onClick={() => navigate("/cart")} className="iconHolder">
+              <BsCart className="mobileNavIcon" />
+            </span>
+            <span className="iconHolder">
+              <BiMenuAltRight className="mobileNavIcon" />
+            </span>
+          </div>
+        </div>
+        <aside className="flex column justifyCenter itemCenter">
+          <p>Home</p>
+          <p>Product</p>
+          <p>Pricing</p>
+          <p>Contact</p>
+        </aside>
       </section>
     </nav>
   )
