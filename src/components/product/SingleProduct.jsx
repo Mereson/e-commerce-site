@@ -17,11 +17,11 @@ const SingleProduct = () => {
         </div>
         <div className="nextProducts flex">
           <img
-            src="/public/images/productpage/single-product-1-thumb-2.jpg"
+            src="/images/productpage/single-product-1-thumb-2.jpg"
             alt="next product image"
           />
           <img
-            src="/public/images/productpage/single-product-1-thumb-2.jpg"
+            src="/images/productpage/single-product-1-thumb-2.jpg"
             alt="next product image"
           />
         </div>
