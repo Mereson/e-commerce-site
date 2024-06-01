@@ -299,6 +299,10 @@ form button {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 430px) {
   .navSection {
     display: none;
@@ -375,5 +379,9 @@ form button {
 
   .hide {
     display: none;
+  }
+
+  .hidden {
+    display: flex;
   }
 }
