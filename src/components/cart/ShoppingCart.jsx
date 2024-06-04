@@ -151,20 +151,15 @@ const CartItem = ({ id, item, amount, dispatch }) => {
       <div className="flex column hidden  justifyCenter">
         <div className="cartItem flex">
           <div className="column1 flex itemCenter ">
-            <img
-              src="/images/cart/single-product-1-thumb-1.jpg"
-              alt="product image"
-            />
+            <img className="cartThumb" src={item.images[0]} alt="product image" />
             <div className=" cartItemDetails flex column">
-              <p className="cartItemName">Graphic Design</p>
+              <p className="cartItemName">{item.title}</p>
               <div className="column3 flex ">
                 <p className="cartItemPrice1 flex itemCenter ">
-                  <TbCurrencyNaira />
-                  3000
+                  ${(item.price * amount).toFixed(2)}
                 </p>
                 <p className="cartItemPrice2 flex itemCenter">
-                  <TbCurrencyNaira />
-                  3000 x 1 item
+                  ${item.price} x {amount} item
                 </p>
               </div>
               <p className="cartItemStatus">In Stock</p>
@@ -191,13 +186,19 @@ const CartItem = ({ id, item, amount, dispatch }) => {
             </p>
           </div>
           <div className="column2 flex justifyCenter itemCenter gap-10">
-            <div className="cartItemReduce flex justifyCenter pointer itemCenter">
+            <div
+              onClick={() => dispatch(decrease(id))}
+              className="cartItemReduce flex justifyCenter pointer itemCenter"
+            >
               <FaCircleMinus className="plus" />
             </div>
             <div className="cartItemNumber flex justifyCenter itemCenter">
-              1
+              {amount}
             </div>
-            <div className="cartItemAdd white flex justifyCenter itemCenter pointer">
+            <div
+              onClick={() => dispatch(increase(id))}
+              className="cartItemAdd white flex justifyCenter itemCenter pointer"
+            >
               <FaCirclePlus className="plus actionBlue" />
             </div>
           </div>

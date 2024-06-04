@@ -237,6 +237,10 @@
     flex-direction: column;
   }
 
+  .tableHead{
+    width: 90%;
+  }
+
   .column1 {
     width: 100%;
     justify-content: space-around;

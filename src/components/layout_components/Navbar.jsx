@@ -7,8 +7,15 @@ import { IoMdHeartEmpty } from "react-icons/io"
 import { FaRegUser } from "react-icons/fa6"
 import { BiMenuAltRight } from "react-icons/bi"
 import { useSelector } from "react-redux"
+import { useState } from "react"
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen)
+  }
+
   const navigate = useNavigate()
   const { cart } = useSelector((store) => store.product)
 
@@ -74,19 +81,23 @@ const Navbar = () => {
           <div className="flex itemCenter mobileNavIcons ">
             <BsSearch className="mobileNavIcon " />
             <span onClick={() => navigate("/cart")} className="iconHolder">
-              <BsCart className="mobileNavIcon" />
+              <BsCart className="mobileNavIcon" />{cart.length}
             </span>
-            <span className="iconHolder">
+            <span onClick={toggleSidebar} className="iconHolder">
               <BiMenuAltRight className="mobileNavIcon" />
             </span>
           </div>
         </div>
-        <aside className="flex column justifyCenter itemCenter">
-          <p>Home</p>
-          <p>Product</p>
-          <p>Pricing</p>
-          <p>Contact</p>
-        </aside>
+        {isOpen ? (
+          <aside className="flex column justifyCenter itemCenter">
+            <p onClick={() => navigate("/")}>Home</p>
+            <p>Product</p>
+            <p>Pricing</p>
+            <p>Contact</p>
+          </aside>
+        ) : (
+          ""
+        )}
       </section>
     </nav>
   )
