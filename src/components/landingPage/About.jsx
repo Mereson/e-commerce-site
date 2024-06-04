@@ -10,7 +10,7 @@ const About = () => {
             <div className="abtUserImgDiv flex justifyCenter itemsCenter">
               <img
                 className="abtUserImg"
-                src="/public/images/landingpage/user1.png"
+                src="/images/landingpage/user1.png"
                 alt="user image"
               />
             </div>

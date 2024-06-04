@@ -38,14 +38,14 @@ const Post = ({ src }) => {
           We focus on ergonomics and meeting you where you work. It's only a
           keystroke away.
         </p>
-        <p className="pDDate flex">
+        <div className="pDDate flex">
           <p className="flex justifyCenter textCenter">
             <TbClockHour3 className="actionBlue postIcon" /> 22 April 2021
           </p>
           <p className="flex justifyCenter textCenter">
             <AiOutlineAreaChart className="actionGreen postIcon" /> 10 comments
           </p>
-        </p>
+        </div>
         <div className="flex itemCenter">
           <h6>Learn More</h6>
           <MdArrowForwardIos className=" actionBlue " />
