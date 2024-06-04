@@ -6,9 +6,11 @@ import { RiArrowDropDownLine } from "react-icons/ri"
 import { IoMdHeartEmpty } from "react-icons/io"
 import { FaRegUser } from "react-icons/fa6"
 import { BiMenuAltRight } from "react-icons/bi"
+import { useSelector } from "react-redux"
 
 const Navbar = () => {
   const navigate = useNavigate()
+  const { cart } = useSelector((store) => store.product)
 
   return (
     <nav className="flex column">
@@ -41,7 +43,7 @@ const Navbar = () => {
             <NavLink to={"/"} className="links">
               Hello
             </NavLink>
-            <NavLink className="links">
+            <NavLink to={"product/:id"} className="links">
               Shop <RiArrowDropDownLine />
             </NavLink>
             <NavLink className="links">About</NavLink>
@@ -56,10 +58,11 @@ const Navbar = () => {
           </span>
           <BsSearch className="icon" />
           <span onClick={() => navigate("/cart")} className="iconHolder">
-            <BsCart className="icon" />1
+            <BsCart className="icon" />
+            {cart.length}
           </span>
           <span className="iconHolder">
-            <IoMdHeartEmpty className="icon" />1
+            <IoMdHeartEmpty className="icon" />0
           </span>
         </div>
       </section>
